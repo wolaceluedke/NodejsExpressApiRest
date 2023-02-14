@@ -1,0 +1,31 @@
+{
+  "name": "ms-authentication",
+  "version": "1.0.0",
+  "description": "Microservice",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+    "build": "tsc -p .",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolaceluedke/NodejsExpressApiRest.git"
+  },
+  "author": "Wolace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolaceluedke/NodejsExpressApiRest/issues"
+  },
+  "homepage": "https://github.com/wolaceluedke/NodejsExpressApiRest#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.13.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

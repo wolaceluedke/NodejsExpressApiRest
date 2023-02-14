@@ -1,0 +1,20 @@
+/* Visit https://aka.ms/tsconfig to read more about this file */
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "rootDir": "src", //mostra aonde que vai estar todos os typescripts
+    "typeRoots": [
+      "./src/@types",
+      "./node_modules/@types"
+    ], //aonde ele vai encontrar os arquivos de definição do typescript, quando vai usar uma biblioteca 
+    //normalmente ela vai estar em javascript puro
+    "outDir": "./dist", //para aonde transpila o código, para aonde vai o código que a gente fez de fato 
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
