@@ -13,9 +13,13 @@ segurança a mais, vai passar por ele.
 
                  API REST
 .GET /users     //VISUALIZAÇÃO DE TODOS USUÁRIOS
+<br>
 .GET /users/:uuid       //VISUALIZAÇÃO DE UM USUÁRIO ESPERCÍFICO
+<br>
 .POST /users         //CRIAÇÃO DE UM USUÁRIO
+<br>
 .PUT /users/:uuid     //ALTERAÇÃO DE UM USUÁRIO ESPECÍFICO
+<br>
 .DELETE /users/:uuid     //DELETAR UM USUÁRIO ESPECÍFICO
 <br>
                 AUTENTICAÇÃO
