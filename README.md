@@ -31,14 +31,56 @@ São eles:
 * POST /token/validate
 
 
-Biblioteca para automatizar o servidor para identificar alterações no código.
+Biblioteca para automatizar o servidor para identificar alterações no código
+Para utilizar essa biblioteca, execute o seguinte comando:
 
+css
+Copy code
 npm install --save-dev ts-node-dev
+Adicione a seguinte build para transpilar o código:
 
-adicionei essa build para transpilar o código 
+json
+Copy code
 "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
-
 Pacote para monitorar os status
-npm install --save http-status-codes
+Para monitorar os status, utilize o pacote abaixo:
 
-também é preciso fazer uma configuração no node.js para que ele seja capaz de interpretar jsons
+css
+Copy code
+npm install --save http-status-codes
+Configuração do Node.js
+É preciso fazer uma configuração no Node.js para que ele seja capaz de interpretar JSONs.
+
+Biblioteca pg
+Será utilizada a biblioteca pg para realizar a conexão com o banco de dados.
+
+Para instalar a biblioteca, utilize o seguinte comando:
+
+Copy code
+npm install pg
+Criação da tabela
+Foi criada a tabela application_user utilizando o seguinte comando:
+
+sql
+Copy code
+CREATE TABLE IF NOT EXISTS application_user(
+    uuid uuid DEFAULT uuid_generate_v4(),
+)
+Essa tabela irá criar um UUID para representar o usuário, trazendo mais segurança para a aplicação.
+
+Para que o uuid_generate_v4 funcione dentro do Postgres, é necessário habilitar a extensão uuid-ossp. Utilize o comando abaixo para habilitar a extensão:
+
+sql
+Copy code
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+Além disso, é necessário utilizar o pgcrypto para criptografar a senha. Utilize o comando abaixo para habilitar a extensão:
+
+sql
+Copy code
+CREATE EXTENSION IF NOT EXISTS "pgcrypto";
+Por fim, utilize o seguinte comando para inserir um usuário com nome de usuário admin e senha criptografada admin:
+
+sql
+Copy code
+INSERT INTO application_user (username, password) VALUES ('admin', crypt('admin', 'my_salt'));
+O my_salt é uma chave privada utilizada para a criptografia da senha.
