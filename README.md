@@ -22,15 +22,20 @@ segurança a mais, vai passar por ele.
 <br>
 .DELETE /users/:uuid     //DELETAR UM USUÁRIO ESPECÍFICO
 <br>
+<br>
                 AUTENTICAÇÃO
+<br>
 <br>
 .POST /token  //PARA QUE FAÇA LOGIN DESSE ENDPOINT
 <br>
 .POST /token/validate   //OPERAÇÃO PARA VALIDAR NOSSO TOKEN
 
 Biblioteca para automatizar o servidor para identificar alterações no código.
+<br>
 npm install --save-dev ts-node-dev
+<br>
 adicionei essa build para transpilar o código 
+<br>
 "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
 
 Pacote para monitorar os status
