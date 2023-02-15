@@ -21,3 +21,13 @@ segurança a mais, vai passar por ele.
                 AUTENTICAÇÃO
 .POST /token  //PARA QUE FAÇA LOGIN DESSE ENDPOINT
 .POST /token/validate   //OPERAÇÃO PARA VALIDAR NOSSO TOKEN
+
+Biblioteca para automatizar o servidor para identificar alterações no código.
+npm install --save-dev ts-node-dev
+adicionei essa build para transpilar o código 
+"dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
+
+Pacote para monitorar os status
+npm install --save http-status-codes
+
+também é preciso fazer uma configuração no node.js para que ele seja capaz de interpretar jsons
