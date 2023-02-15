@@ -84,3 +84,7 @@ sql
 Copy code
 INSERT INTO application_user (username, password) VALUES ('admin', crypt('admin', 'my_salt'));
 O my_salt é uma chave privada utilizada para a criptografia da senha.
+
+
+Criando a estrutura básica para conexão com banco de dados.
+-Consultar a lista de nosss usuários, para isso, criar um pasta chamada repositories: nessa parte deixa todo código responsável por acessar o banco de dados
