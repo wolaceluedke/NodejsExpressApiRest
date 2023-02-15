@@ -11,19 +11,25 @@ segurança a mais, vai passar por ele.
 -fazer manutenção do usuário dentro dele 
 -endpoints de apoio de obtenção e validação de token.
 
-  Neste projeto Temos alguns Endpoints Base que podem ser extendidos da forma mais adequada para seu contexto.
+## Composição do nosso projeto
+
+Neste projeto Temos alguns **Endpoints Base** que podem ser extendidos da forma mais adequada para seu contexto. 
 
 São eles:
 
-Usuários
-GET /users
-GET /users/:uuid
-POST /users
-PUT /users/:uuid
-DELETE /users/:uuid
-Autenticação
-POST /token
-POST /token/validateRA VALIDAR NOSSO TOKEN
+### Usuários
+
+* GET /users
+* GET /users/:uuid
+* POST /users
+* PUT /users/:uuid
+* DELETE /users/:uuid
+
+### Autenticação
+
+* POST /token
+* POST /token/validate
+
 
 Biblioteca para automatizar o servidor para identificar alterações no código.
 
