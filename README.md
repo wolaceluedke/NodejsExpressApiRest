@@ -11,24 +11,19 @@ segurança a mais, vai passar por ele.
 -fazer manutenção do usuário dentro dele 
 -endpoints de apoio de obtenção e validação de token.
 
-                 API REST
-.GET /users     //VISUALIZAÇÃO DE TODOS USUÁRIOS
-<br>
-.GET /users/:uuid       //VISUALIZAÇÃO DE UM USUÁRIO ESPERCÍFICO
-<br>
-.POST /users         //CRIAÇÃO DE UM USUÁRIO
-<br>
-.PUT /users/:uuid     //ALTERAÇÃO DE UM USUÁRIO ESPECÍFICO
-<br>
-.DELETE /users/:uuid     //DELETAR UM USUÁRIO ESPECÍFICO
-<br>
-<br>
-                AUTENTICAÇÃO
-<br>
-<br>
-.POST /token  //PARA QUE FAÇA LOGIN DESSE ENDPOINT
-<br>
-.POST /token/validate   //OPERAÇÃO PARA VALIDAR NOSSO TOKEN
+  Neste projeto Temos alguns Endpoints Base que podem ser extendidos da forma mais adequada para seu contexto.
+
+São eles:
+
+Usuários
+GET /users
+GET /users/:uuid
+POST /users
+PUT /users/:uuid
+DELETE /users/:uuid
+Autenticação
+POST /token
+POST /token/validateRA VALIDAR NOSSO TOKEN
 
 Biblioteca para automatizar o servidor para identificar alterações no código.
 
