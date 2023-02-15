@@ -3,14 +3,14 @@
 Projeto Construido no estilo arquitetal REST 
 Criando API REST na prática com node.js + Express
 Banco de dados postGress 
-<br>
+
 foi criado um  microserviço de autenticação,na qual ele gerencia todo cadastro do usuário e a autenticação dentro da plataforma.
 Ele acaba virando uma peça chave em várias aplicações do ecosistema, pois todas as requisições autenticadas que precisem de uma
 segurança a mais, vai passar por ele.
 -criar microserviço
 -fazer manutenção do usuário dentro dele 
 -endpoints de apoio de obtenção e validação de token.
-<br>
+
                  API REST
 .GET /users     //VISUALIZAÇÃO DE TODOS USUÁRIOS
 .GET /users/:uuid       //VISUALIZAÇÃO DE UM USUÁRIO ESPERCÍFICO
@@ -21,7 +21,7 @@ segurança a mais, vai passar por ele.
                 AUTENTICAÇÃO
 .POST /token  //PARA QUE FAÇA LOGIN DESSE ENDPOINT
 .POST /token/validate   //OPERAÇÃO PARA VALIDAR NOSSO TOKEN
-<br>
+
 Biblioteca para automatizar o servidor para identificar alterações no código.
 npm install --save-dev ts-node-dev
 adicionei essa build para transpilar o código 
