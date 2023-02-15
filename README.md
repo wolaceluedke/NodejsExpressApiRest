@@ -23,7 +23,9 @@ segurança a mais, vai passar por ele.
 .DELETE /users/:uuid     //DELETAR UM USUÁRIO ESPECÍFICO
 <br>
                 AUTENTICAÇÃO
+<br>
 .POST /token  //PARA QUE FAÇA LOGIN DESSE ENDPOINT
+<br>
 .POST /token/validate   //OPERAÇÃO PARA VALIDAR NOSSO TOKEN
 
 Biblioteca para automatizar o servidor para identificar alterações no código.
